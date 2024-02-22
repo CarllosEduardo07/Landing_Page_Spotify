@@ -1,5 +1,5 @@
 # Landing Page Spotify
-Este projeto é uma landing page personalizada inspirada no design do meu Spotify.
+Este projeto é uma Landing Page com designer responsivo personalizada e inspirada no design do meu Spotify.
 
 ![meu_spotify](https://github.com/CarllosEduardo07/Landing_Page_Spotify/assets/80606019/f46a66ab-3b0b-48cb-b608-ccb2602b3ab4)
 
