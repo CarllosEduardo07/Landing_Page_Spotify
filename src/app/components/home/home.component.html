@@ -1,18 +1,18 @@
-<div class="flex flex-col bg-zinc-950">
+<div class="h-screen lg:flex lg:flex-col bg-zinc-950">
     <!-- divisao -->
-    <div class="w-2 p-1.5 bg-zinc-950"></div>
+    <div class="w-2 p-1.5 bg-zinc-950 hidden lg:block"></div>
 
     <div class="flex flex-1">
         <!-- divisao -->
-        <div class="w-2 p-1.5 bg-zinc-950"></div>
+        <div class="w-2 p-1.5 bg-zinc-950 hidden lg:block"></div>
 
-        <app-sidebar></app-sidebar>
+        <app-sidebar class="hidden lg:block"></app-sidebar>
 
         <!-- divisao -->
-        <div class="w-2 p-1.5 bg-zinc-950"></div>
+        <div class="w-2 p-1.5 bg-zinc-950 hidden lg:block"></div>
 
-        <main class="flex-1 px-5 py-3 bg-zinc-900 rounded-2xl">
-            <div class="flex items-center gap-4">
+        <main class="flex-1 px-5 py-3 bg-zinc-900 lg:rounded-2xl">
+            <div class="lg:flex lg:items-center lg:gap-4 hidden">
                 <button class="p-1 rounded-full bg-black/40">
                     <lucide-icon name="ChevronLeft" class="my-icon"></lucide-icon>
                 </button>
@@ -21,61 +21,61 @@
                 </button>
             </div>
 
-            <h1 class="mt-5 font-semibold text-3xl hover:underline">Página Inicial do Spotify</h1>
+            <h1 class="mt-3 font-semibold text-lg md:text-xl lg:text-3xl hover:underline">Página Inicial do Spotify</h1>
             <!-- Grid PlayList -->
-            <div class="grid grid-cols-3 gap-4 mt-4">
-                <a href="#" class="group bg-white/5 group rounded-md overflow-hidden flex items-center gap-4 hover:bg-white/10 transition-colors">
-                    <img ngSrc="assets/melhores_musicas.png" width="70" height="70" alt="" />
-                    <strong>Melhores Músicas</strong>
-                    <button class="w-12 h-12 pl-2 flex items-center justify-center text-green-400 ml-auto mr-3">
-                        <lucide-icon name="AudioLines" class="my-icon"></lucide-icon>
+            <div class="mt-4 grid grid-cols-2 gap-2 lg:grid lg:grid-cols-3 lg:overflow-auto lg:gap-4">
+                <a href="#" class="bg-white/5 group rounded-md overflow-hidden flex items-center gap-3 hover:bg-white/10 transition-colors relative">
+                    <img ngSrc="./assets/quero_ferias.png" width="70" height="70" alt="" />
+                    <strong class="text-xs md:text-base">Melhores Músicas</strong>
+                    <button class="w-5 h-5 ml-auto mr-1 lg:mr-3 lg:w-12 lg:h-12 lg:pl-1 text-green-400 lg:flex lg:items-center lg:justify-center absolute right-0">
+                        <lucide-icon name="AudioLines" class="size-4 lg:size-7"></lucide-icon>
                     </button>
                 </a>
-                <a href="#" class="bg-white/5 group rounded-md overflow-hidden flex items-center gap-4 hover:bg-white/10 transition-colors">
+                <a href="#" class="bg-white/5 group rounded-md overflow-hidden flex items-center gap-3 hover:bg-white/10 transition-colors">
                     <img ngSrc="./assets/quero_ferias.png" width="70" height="70" alt="" />
-                    <strong>Quero Ferias</strong>
-                    <button class="w-12 h-12 pl-1 flex items-center justify-center rounded-full bg-green-400 text-black ml-auto mr-3 invisible group-hover:visible">
+                    <strong class="text-xs md:text-base">Quero Ferias</strong>
+                    <button class="w-12 h-12 lg:pl-1 lg:flex lg:items-center lg:justify-center rounded-full bg-green-400 text-black ml-auto mr-3 invisible group-hover:visible  hidden">
                         <lucide-icon name="Play" class="my-icon"></lucide-icon>
                     </button>
                 </a>
                 <a href="#" class="bg-white/5 group rounded-md overflow-hidden flex items-center gap-4 hover:bg-white/10 transition-colors">
                     <img ngSrc="./assets/betweew.png" width="70" height="70" alt="" />
-                    <strong>BETWEEN 1&2</strong>
-                    <button class="w-12 h-12 pl-1 flex items-center justify-center rounded-full bg-green-400 text-black ml-auto mr-3 invisible group-hover:visible">
+                    <strong class="text-xs md:text-base">BETWEEN 1&2</strong>
+                    <button class="w-12 h-12 lg:pl-1 lg:flex lg:items-center lg:justify-center rounded-full bg-green-400 text-black ml-auto mr-3 invisible group-hover:visible hidden">
                         <lucide-icon name="Play" class="my-icon"></lucide-icon>
                     </button>
                 </a>
                 <a href="#" class="bg-white/5 group rounded-md overflow-hidden flex items-center gap-4 hover:bg-white/10 transition-colors">
                     <img ngSrc="./assets/melhores_rocks.png" width="70" height="70" alt="" />
-                    <strong>Melhores Rocks</strong>
-                    <button class="w-12 h-12 pl-1 flex items-center justify-center rounded-full bg-green-400 text-black ml-auto mr-3 invisible group-hover:visible">
+                    <strong class="text-xs md:text-base">Melhores Rocks</strong>
+                    <button class="w-12 h-12 lg:pl-1 lg:flex lg:items-center lg:justify-center rounded-full bg-green-400 text-black ml-auto mr-3 invisible group-hover:visible hidden">
                         <lucide-icon name="Play" class="my-icon"></lucide-icon>
                     </button>
                 </a>
                 <a href="#" class="bg-white/5 group rounded-md overflow-hidden flex items-center gap-4 hover:bg-white/10 transition-colors">
                     <img ngSrc="./assets/twice_ready_to_be.png" width="70" height="70" alt="" />
-                    <strong>READY TO BE</strong>
-                    <button class="w-12 h-12 pl-1 flex items-center justify-center rounded-full bg-green-400 text-black ml-auto mr-3 invisible group-hover:visible">
+                    <strong class="text-xs md:text-base">READY TO BE</strong>
+                    <button class="w-12 h-12 lg:pl-1 lg:flex lg:items-center lg:justify-center rounded-full bg-green-400 text-black ml-auto mr-3 invisible group-hover:visible hidden">
                         <lucide-icon name="Play" class="my-icon"></lucide-icon>
                     </button>
                 </a>
                 <a href="#" class="bg-white/5 group rounded-md overflow-hidden flex items-center gap-4 hover:bg-white/10 transition-colors">
                     <img ngSrc="./assets/album_nmixx.png" width="70" height="70" alt="" />
-                    <strong>Fe3O4: BREAK</strong>
-                    <button class="w-12 h-12 pl-1 flex items-center justify-center rounded-full bg-green-400 text-black ml-auto mr-3 invisible group-hover:visible">
+                    <strong class="text-xs md:text-base">Fe3O4: BREAK</strong>
+                    <button class="w-12 h-12 lg:pl-1 lg:flex lg:items-center lg:justify-center rounded-full bg-green-400 text-black ml-auto mr-3 invisible group-hover:visible hidden">
                         <lucide-icon name="Play" class="my-icon"></lucide-icon>
                     </button>
                 </a>
             </div>
 
-            <h2 class="mt-10 font-semibold text-2xl hover:underline">Feito para Carlos Eduardo Albuquerque</h2>
+            <h2 class="mt-10 font-semibold text-lg md:text-xl lg:text-2xl hover:underline">Feito para Carlos Eduardo Albuquerque</h2>
             <!-- Sugestao de Albums -->
-            <div class="grid grid-cols-8 gap-4 mt-4">
-                <div class="group bg-white/5 p-3 rounded-md flex flex-col gap-2 hover:bg-white/10">
+            <div class="grid grid-cols-3 pb-44 lg:pb-0 md:grid md:grid-cols-4 lg:grid lg:grid-cols-8 gap-4 mt-4">
+                <div class="group bg-white/5 p-1 lg:p-2 rounded-md flex flex-col gap-2 hover:bg-white/10">
                     <div class="relative">
                         <img ngSrc="./assets/twice_feel_special.png" class="w-full" width="110" height="110" alt="" />
                         <button
-                            class="w-10 h-10 pl-1 flex items-center justify-center rounded-full bg-green-400 text-black absolute bottom-1 right-0 invisible group-hover:visible transition ease-linear delay-0 group-hover:-translate-y-2"
+                            class="w-10 h-10 pl-1 lg:flex lg:items-center lg:justify-center rounded-full bg-green-400 text-black absolute bottom-1 right-0 invisible group-hover:visible hidden transition ease-linear delay-0 group-hover:-translate-y-2"
                         >
                             <lucide-icon name="Play" size="20" class="my-icon"></lucide-icon>
                         </button>
@@ -83,11 +83,11 @@
                     <strong class="font-semibold">Feel Special</strong>
                     <span class="text-sm text-zinc-400">Twice • 2019</span>
                 </div>
-                <div class="group bg-white/5 p-3 rounded-md flex flex-col gap-2 hover:bg-white/10">
+                <div class="group bg-white/5 p-1 lg:p-2 rounded-md flex flex-col gap-2 hover:bg-white/10">
                     <div class="relative">
                         <img ngSrc="./assets/rock_star.png" class="w-full" width="110" height="110" alt="" />
                         <button
-                            class="w-10 h-10 pl-1 flex items-center justify-center rounded-full bg-green-400 text-black absolute bottom-1 right-0 invisible group-hover:visible transition ease-linear delay-0 group-hover:-translate-y-2"
+                            class="w-10 h-10 pl-1 lg:flex lg:items-center lg:justify-center rounded-full bg-green-400 text-black absolute bottom-1 right-0 invisible group-hover:visible hidden transition ease-linear delay-0 group-hover:-translate-y-2"
                         >
                             <lucide-icon name="Play" size="20" class="my-icon"></lucide-icon>
                         </button>
@@ -95,11 +95,11 @@
                     <strong class="font-semibold">ROCK-STAR</strong>
                     <span class="text-sm text-zinc-400">Stray Kids • 2023</span>
                 </div>
-                <div class="group bg-white/5 p-3 rounded-md flex flex-col gap-2 hover:bg-white/10">
+                <div class="group bg-white/5 p-1 lg:p-2 rounded-md flex flex-col gap-2 hover:bg-white/10">
                     <div class="relative">
                         <img ngSrc="./assets/apocalypse.png" class="w-full" width="110" height="110" alt="" />
                         <button
-                            class="w-10 h-10 pl-1 flex items-center justify-center rounded-full bg-green-400 text-black absolute bottom-1 right-0 invisible group-hover:visible transition ease-linear delay-0 group-hover:-translate-y-2"
+                            class="w-10 h-10 pl-1 lg:flex lg:items-center lg:justify-center rounded-full bg-green-400 text-black absolute bottom-1 right-0 invisible group-hover:visible hidden transition ease-linear delay-0 group-hover:-translate-y-2"
                         >
                             <lucide-icon name="Play" size="20" class="my-icon"></lucide-icon>
                         </button>
@@ -107,11 +107,11 @@
                     <strong class="font-semibold">[Apocalypse : Save us]</strong>
                     <span class="text-sm text-zinc-400">DreamCatcher • 2022</span>
                 </div>
-                <div class="group bg-white/5 p-3 rounded-md flex flex-col gap-2 hover:bg-white/10">
+                <div class="group bg-white/5 p-1 lg:p-2 rounded-md flex flex-col gap-2 hover:bg-white/10">
                     <div class="relative">
                         <img ngSrc="./assets/formula_of_love.png" class="w-full" width="110" height="110" alt="" />
                         <button
-                            class="w-10 h-10 pl-1 flex items-center justify-center rounded-full bg-green-400 text-black absolute bottom-1 right-0 invisible group-hover:visible transition ease-linear delay-0 group-hover:-translate-y-2"
+                            class="w-10 h-10 pl-1 lg:flex lg:items-center lg:justify-center rounded-full bg-green-400 text-black absolute bottom-1 right-0 invisible group-hover:visible hidden transition ease-linear delay-0 group-hover:-translate-y-2"
                         >
                             <lucide-icon name="Play" size="20" class="my-icon"></lucide-icon>
                         </button>
@@ -119,11 +119,11 @@
                     <strong class="font-semibold">Formula of Love: O+T=<3</strong>
                     <span class="text-sm text-zinc-400">Twice • 2021</span>
                 </div>
-                <div class="group bg-white/5 p-3 rounded-md flex flex-col gap-2 hover:bg-white/10">
+                <div class="group bg-white/5 p-1 lg:p-2 rounded-md flex flex-col gap-2 hover:bg-white/10">
                     <div class="relative">
                         <img ngSrc="./assets/kill_my_doubt.png" class="w-full" width="110" height="110" alt="" />
                         <button
-                            class="w-10 h-10 pl-1 flex items-center justify-center rounded-full bg-green-400 text-black absolute bottom-1 right-0 invisible group-hover:visible transition ease-linear delay-0 group-hover:-translate-y-2"
+                            class="w-10 h-10 pl-1 lg:flex lg:items-center lg:justify-center rounded-full bg-green-400 text-black absolute bottom-1 right-0 invisible group-hover:visible hidden transition ease-linear delay-0 group-hover:-translate-y-2"
                         >
                             <lucide-icon name="Play" size="20" class="my-icon"></lucide-icon>
                         </button>
@@ -131,11 +131,11 @@
                     <strong class="font-semibold">KILL MY DOUBT</strong>
                     <span class="text-sm text-zinc-400">ITZY • 2023</span>
                 </div>
-                <div class="group bg-white/5 p-3 rounded-md flex flex-col gap-2 hover:bg-white/10">
+                <div class="group bg-white/5 p-1 lg:p-2 rounded-md flex flex-col gap-2 hover:bg-white/10">
                     <div class="relative">
                         <img ngSrc="./assets/gods.png" class="w-full" width="110" height="110" alt="" />
                         <button
-                            class="w-10 h-10 pl-1 flex items-center justify-center rounded-full bg-green-400 text-black absolute bottom-1 right-0 invisible group-hover:visible transition ease-linear delay-0 group-hover:-translate-y-2"
+                            class="w-10 h-10 pl-1 lg:flex lg:items-center lg:justify-center rounded-full bg-green-400 text-black absolute bottom-1 right-0 invisible group-hover:visible hidden transition ease-linear delay-0 group-hover:-translate-y-2"
                         >
                             <lucide-icon name="Play" size="20" class="my-icon"></lucide-icon>
                         </button>
@@ -143,11 +143,11 @@
                     <strong class="font-semibold">GODS</strong>
                     <span class="text-sm text-zinc-400">League of Legends • NewJeans • 2023</span>
                 </div>
-                <div class="group bg-white/5 p-3 rounded-md flex flex-col gap-2 hover:bg-white/10">
+                <div class="group bg-white/5 p-1 lg:p-2 rounded-md flex flex-col gap-2 hover:bg-white/10">
                     <div class="relative">
                         <img ngSrc="./assets/expergo.png" class="w-full" width="110" height="110" alt="" />
                         <button
-                            class="w-10 h-10 pl-1 flex items-center justify-center rounded-full bg-green-400 text-black absolute bottom-1 right-0 invisible group-hover:visible transition ease-linear delay-0 group-hover:-translate-y-2"
+                            class="w-10 h-10 pl-1 lg:flex lg:items-center lg:justify-center rounded-full bg-green-400 text-black absolute bottom-1 right-0 invisible group-hover:visible hidden transition ease-linear delay-0 group-hover:-translate-y-2"
                         >
                             <lucide-icon name="Play" size="20" class="my-icon"></lucide-icon>
                         </button>
@@ -155,11 +155,11 @@
                     <strong class="font-semibold">Expérgo</strong>
                     <span class="text-sm text-zinc-400">NMIXX • 2023</span>
                 </div>
-                <div class="group bg-white/5 p-3 rounded-md flex flex-col gap-2 hover:bg-white/10">
+                <div class="group bg-white/5 p-1 lg:p-2 rounded-md flex flex-col gap-2 hover:bg-white/10">
                     <div class="relative">
                         <img ngSrc="./assets/girls_of_the_year.png" class="w-full" width="110" height="110" alt="" />
                         <button
-                            class="w-10 h-10 pl-1 flex items-center justify-center rounded-full bg-green-400 text-black absolute bottom-1 right-0 invisible group-hover:visible transition ease-linear delay-0 group-hover:-translate-y-2"
+                            class="w-10 h-10 pl-1 lg:flex lg:items-center lg:justify-center rounded-full bg-green-400 text-black absolute bottom-1 right-0 invisible group-hover:visible hidden transition ease-linear delay-0 group-hover:-translate-y-2"
                         >
                             <lucide-icon name="Play" size="20" class="my-icon"></lucide-icon>
                         </button>
@@ -171,7 +171,8 @@
         </main>
 
         <!-- divisao -->
-        <div class="w-2 p-1.5 bg-zinc-950"></div>
+        <div class="w-2 p-1.5 bg-zinc-950 hidden lg:block"></div>
     </div>
     <app-footer></app-footer>
+    <app-sidebarMobile class="lg:hidden"></app-sidebarMobile>
 </div>
